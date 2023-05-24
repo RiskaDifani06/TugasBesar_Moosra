@@ -26,8 +26,11 @@ Route::post('/logout', [C_Login::class, 'logout'])->middleware('auth');
 Route::get('/home', [C_Home::class, 'index'])->name('home')->middleware('auth');
 
 Route::get('/kriteria', [C_Kriteria::class, 'lihatKriteria'])->name('kriteria')->middleware('auth');
+Route::get('/kriteria/tambah/', [C_Kriteria::class, 'tambahKriteria'])->name('tambah_Kriteria')->middleware('auth');
+Route::post('/kriteria', [C_Kriteria::class, 'tambah']);
 Route::get('/kriteria/ubah/{id}', [C_Kriteria::class, 'ubahKriteria'])->name('ubah_kriteria')->middleware('auth');
 Route::post('/kriteria/{id}/edit', [C_Kriteria::class, 'ubah']);
+Route::post('/kriteria/{id}/delete', [C_Kriteria::class, 'hapus']);
 
 Route::get('/alternatif', [C_Alternatif::class, 'lihatAlternatif'])->name('alternatif')->middleware('auth');
 Route::get('/alternatif/tambah/', [C_Alternatif::class, 'tambahAlternatif'])->name('tambah_Alternatif')->middleware('auth');

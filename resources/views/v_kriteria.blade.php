@@ -7,8 +7,9 @@
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
-        <div class="card-header py-3">
+    <div class="card-header d-flex align-items-center justify-content-between py-3">
             <h6 class="m-0 font-weight-bold text-primary">Data Kriteria</h6>
+            <a href="/kriteria/tambah" class="btn btn-primary btn-sm">Tambah</a>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -39,9 +40,16 @@
                                 <td>{{ $kr->bobot}}%</td>
                                 <td>{{ $kr->jenis_kriteria }}</td>
                                 <td>
-                                    <a href="/kriteria/ubah/{{$kr->id}}" class="btn btn-warning btn-sm">
-                                        <i class="fa-solid fa-pencil"></i> Ubah
+                                    <span class="d-flex align-items-center justify-content-start">
+                                    <a href="/kriteria/ubah/{{$kr->id}}" class="btn btn-warning btn-sm mx-1">
+                                        <i class="fa-solid fa-pencil"></i>
                                     </a>
+                                    <form action="/kriteria/{{ $kr->id }}/delete" method="POST" class="mx-1">
+                                          @csrf
+                                          <button type="submit" class="btn btn-danger btn-sm">
+                                             <i class="fa-solid fa-trash"></i>
+                                          </button>
+                                      </form>
                                 </td>
                             </tr>
                         @endforeach
