@@ -46,16 +46,16 @@
                 <div class="d-flex card-body justify-content-center">
                     <table>
                         <tr>
-                            <td>Dinda Nur Hasanah</td>
+                            <td>Rheina Yulia Wati</td>
                             <td style="padding:10px"> : </td>
-                            <td>10107023</td>
+                            <td>2141764136</td>
                         </tr>
                         <tr>
-                            <td>Lana Ismail</td>
+                            <td>Riska Indah Difani</td>
                             <td style="padding:10px"> : </td>
-                            <td>10107035</td>
+                            <td>2141764080</td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td>Maharani</td>
                             <td style="padding:10px"> : </td>
                             <td>10107037</td>
@@ -74,7 +74,7 @@
                             <td>Tia Rostiawati</td>
                             <td style="padding:10px"> : </td>
                             <td>10107061</td>
-                        </tr>
+                        </tr> -->
                     </table>
                 </div>
             </div>
