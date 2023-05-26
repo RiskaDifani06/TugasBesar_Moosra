@@ -21,13 +21,13 @@
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tfoot>
+                    <!-- <tfoot>
                         <tr>
                             <th>No</th>
                             <th>Nama Mahasisaw</th>
                             <th>Action</th>
                         </tr>
-                    </tfoot>
+                    </tfoot> -->
                     <tbody>
                         @foreach ($alternatif as $al)
                             <tr>
