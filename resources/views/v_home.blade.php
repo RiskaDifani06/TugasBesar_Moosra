@@ -24,10 +24,19 @@
                             src="{{ asset('template') }}/img/undraw_posting_photo.svg" alt="...">
                     </div>
                     <p>
-                        Sistem Pendukung Keputusan (SPK) merupakan salah satu bagian dari sistem informasi berbasis komputer yang interaktif dan berguna khususnya dalam pengambilan keputusan, kami menggunakan SPK untuk pemilihan mahasiswa lulusan terbaik di Politeknik Negeri Subang. Sistem ini digunakan untuk membantu pengambilan keputusan dalam situasi semi terstruktur dan situasi yang tidak terstruktur, dimana tak seorangpun tahu secara pasti bagaimana keputusan seharusnya dibuat.
+                        Sistem Pendukung Keputusan (SPK) merupakan salah satu bagian dari sistem informasi berbasis 
+                        komputer yang interaktif dan berguna khususnya dalam pengambilan keputusan, kami menggunakan SPK 
+                        untuk mendukung keputusan dalam penilaian prestasi kerja. Sistem ini digunakan untuk
+                        membantu pengambilan keputusan dalam situasi semi terstruktur dan situasi yang tidak terstruktur, 
+                        dimana tak seorangpun tahu secara pasti bagaimana keputusan seharusnya dibuat.
                     </p>
                     <p>
-                        Menurut penelitian sebelumnya yang dilakukan oleh Esra Aytac Adali dalam jurnal yang berjudul The multiobjective decision making methods based on MULTIMOORA and MOOSRA for the laptop selection problem. Pemilihan metode Moosra karena metode Moosra sangat sederhana, stabil, dan kuat selain itu, Metode Moosra juga menggunakan rasio sederhana dari jumlah nilai kinerja yang dinormalisasi untuk kriteria manfaat dengan jumlah nilai kinerja yang dinormalisasi untuk kriteria yang tidak menguntungkan untuk menghindari nilai negatif dan menghasilkan nilai kriteria positif
+                        Menurut penelitian sebelumnya yang dilakukan oleh Esra Aytac Adali dalam jurnal yang berjudul 
+                        The multiobjective decision making methods based on MULTIMOORA and MOOSRA for the laptop selection 
+                        problem. Pemilihan metode Moosra karena metode Moosra sangat sederhana, stabil, dan kuat selain itu, 
+                        Metode Moosra juga menggunakan rasio sederhana dari jumlah nilai kinerja yang dinormalisasi untuk 
+                        kriteria manfaat dengan jumlah nilai kinerja yang dinormalisasi untuk kriteria yang tidak 
+                        menguntungkan untuk menghindari nilai negatif dan menghasilkan nilai kriteria positif
                     </p>
                 </div>
             </div>
@@ -46,16 +55,16 @@
                 <div class="d-flex card-body justify-content-center">
                     <table>
                         <tr>
-                            <td>Dinda Nur Hasanah</td>
+                            <td>Rheina Yulia Wati</td>
                             <td style="padding:10px"> : </td>
-                            <td>10107023</td>
+                            <td>2141764136</td>
                         </tr>
                         <tr>
-                            <td>Lana Ismail</td>
+                            <td>Riska Indah Difani</td>
                             <td style="padding:10px"> : </td>
-                            <td>10107035</td>
+                            <td>2141764080</td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td>Maharani</td>
                             <td style="padding:10px"> : </td>
                             <td>10107037</td>
@@ -74,7 +83,7 @@
                             <td>Tia Rostiawati</td>
                             <td style="padding:10px"> : </td>
                             <td>10107061</td>
-                        </tr>
+                        </tr> -->
                     </table>
                 </div>
             </div>

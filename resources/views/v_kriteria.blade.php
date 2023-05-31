@@ -23,7 +23,7 @@
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tfoot>
+                    <!-- <tfoot>
                         <tr>
                             <th>No</th>
                             <th>Kriteria</th>
@@ -31,7 +31,7 @@
                             <th>Jenis</th>
                             <th>Action</th>
                         </tr>
-                    </tfoot>
+                    </tfoot> -->
                     <tbody>
                         @foreach ($kriteria as $kr)
                             <tr>
