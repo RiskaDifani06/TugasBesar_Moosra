@@ -17,7 +17,7 @@
                         <tr>
                           <th rowspan="2">NO</th>
                           <th rowspan="2">ALTERNATIF</th>
-                          <th colspan="5">KRITERIA</th>
+                          <th colspan="10">KRITERIA</th>
                         </tr>
                         <tr>
                             @foreach ($kriteria as $kr)
@@ -57,6 +57,11 @@
                                     <td>{{$pen->sub_kriteria3->nilai}}</td>
                                     <td>{{$pen->sub_kriteria4->nilai}}</td>
                                     <td>{{$pen->sub_kriteria5->nilai}}</td>
+                                    <td>{{$pen->sub_kriteria6->nilai}}</td>
+                                    <td>{{$pen->sub_kriteria7->nilai}}</td>
+                                    <td>{{$pen->sub_kriteria8->nilai}}</td>
+                                    <td>{{$pen->sub_kriteria9->nilai}}</td>
+                                    <td>{{$pen->sub_kriteria10->nilai}}</td>
                                 </tr>
                             @endforeach
                       </tbody>
@@ -77,7 +82,7 @@
                         <tr>
                           <th rowspan="2">NO</th>
                           <th rowspan="2">ALTERNATIF</th>
-                          <th colspan="5">KRITERIA</th>
+                          <th colspan="10">KRITERIA</th>
                         </tr>
                         <tr>
                             @foreach ($kriteria as $kr)
@@ -103,6 +108,11 @@
                                 <td>{{round($pen->sub_kriteria3->nilai/$normalisasi[2],4)}}</td>
                                 <td>{{round($pen->sub_kriteria4->nilai/$normalisasi[3],4)}}</td>
                                 <td>{{round($pen->sub_kriteria5->nilai/$normalisasi[4],4)}}</td>
+                                <td>{{round($pen->sub_kriteria6->nilai/$normalisasi[5],4)}}</td>
+                                <td>{{round($pen->sub_kriteria7->nilai/$normalisasi[6],4)}}</td>
+                                <td>{{round($pen->sub_kriteria8->nilai/$normalisasi[7],4)}}</td>
+                                <td>{{round($pen->sub_kriteria9->nilai/$normalisasi[8],4)}}</td>
+                                <td>{{round($pen->sub_kriteria10->nilai/$normalisasi[9],4)}}</td>
                             </tr>
                         @endforeach
                       </tbody>
@@ -136,6 +146,11 @@
                                 <td>{{round($pen->sub_kriteria3->nilai/$normalisasi[2] * ($pen->sub_kriteria3->kriteria->bobot/100), 4)}}</td>
                                 <td>{{round($pen->sub_kriteria4->nilai/$normalisasi[3] * ($pen->sub_kriteria4->kriteria->bobot/100), 4)}}</td>
                                 <td>{{round($pen->sub_kriteria5->nilai/$normalisasi[4] * ($pen->sub_kriteria5->kriteria->bobot/100), 4)}}</td>
+                                <td>{{round($pen->sub_kriteria5->nilai/$normalisasi[5] * ($pen->sub_kriteria5->kriteria->bobot/100), 4)}}</td>
+                                <td>{{round($pen->sub_kriteria5->nilai/$normalisasi[6] * ($pen->sub_kriteria5->kriteria->bobot/100), 4)}}</td>
+                                <td>{{round($pen->sub_kriteria5->nilai/$normalisasi[7] * ($pen->sub_kriteria5->kriteria->bobot/100), 4)}}</td>
+                                <td>{{round($pen->sub_kriteria5->nilai/$normalisasi[8] * ($pen->sub_kriteria5->kriteria->bobot/100), 4)}}</td>
+                                <td>{{round($pen->sub_kriteria5->nilai/$normalisasi[9] * ($pen->sub_kriteria5->kriteria->bobot/100), 4)}}</td>
                             </tr>
                         @endforeach
                     </tbody>
@@ -190,7 +205,22 @@
                                         if ($pen->sub_kriteria5->kriteria->jenis_kriteria == 'Benefit') {
                                             $ben += (($pen->sub_kriteria5->nilai/$normalisasi[4]) * ($pen->sub_kriteria5->kriteria->bobot/100));
                                         }
-                                        echo round($ben, 4);
+                                        if ($pen->sub_kriteria5->kriteria->jenis_kriteria == 'Benefit') {
+                                            $ben += (($pen->sub_kriteria5->nilai/$normalisasi[5]) * ($pen->sub_kriteria5->kriteria->bobot/100));
+                                        }
+                                        if ($pen->sub_kriteria5->kriteria->jenis_kriteria == 'Benefit') {
+                                            $ben += (($pen->sub_kriteria5->nilai/$normalisasi[6]) * ($pen->sub_kriteria5->kriteria->bobot/100));
+                                        }
+                                        if ($pen->sub_kriteria5->kriteria->jenis_kriteria == 'Benefit') {
+                                            $ben += (($pen->sub_kriteria5->nilai/$normalisasi[7]) * ($pen->sub_kriteria5->kriteria->bobot/100));
+                                        }
+                                        if ($pen->sub_kriteria5->kriteria->jenis_kriteria == 'Benefit') {
+                                            $ben += (($pen->sub_kriteria5->nilai/$normalisasi[8]) * ($pen->sub_kriteria5->kriteria->bobot/100));
+                                        }
+                                        if ($pen->sub_kriteria5->kriteria->jenis_kriteria == 'Benefit') {
+                                            $ben += (($pen->sub_kriteria5->nilai/$normalisasi[9]) * ($pen->sub_kriteria5->kriteria->bobot/100));
+                                        }
+                                        echo round($ben, 9);
                                     @endphp
                                 </td>
                                 <td>
@@ -211,19 +241,34 @@
                                         if ($pen->sub_kriteria5->kriteria->jenis_kriteria == 'Cost') {
                                             $cos += (($pen->sub_kriteria5->nilai/$normalisasi[4]) * ($pen->sub_kriteria5->kriteria->bobot/100));
                                         }
-                                        echo round($cos, 4);
+                                        if ($pen->sub_kriteria5->kriteria->jenis_kriteria == 'Cost') {
+                                            $cos += (($pen->sub_kriteria5->nilai/$normalisasi[5]) * ($pen->sub_kriteria5->kriteria->bobot/100));
+                                        }
+                                        if ($pen->sub_kriteria5->kriteria->jenis_kriteria == 'Cost') {
+                                            $cos += (($pen->sub_kriteria5->nilai/$normalisasi[6]) * ($pen->sub_kriteria5->kriteria->bobot/100));
+                                        }
+                                        if ($pen->sub_kriteria5->kriteria->jenis_kriteria == 'Cost') {
+                                            $cos += (($pen->sub_kriteria5->nilai/$normalisasi[7]) * ($pen->sub_kriteria5->kriteria->bobot/100));
+                                        }
+                                        if ($pen->sub_kriteria5->kriteria->jenis_kriteria == 'Cost') {
+                                            $cos += (($pen->sub_kriteria5->nilai/$normalisasi[8]) * ($pen->sub_kriteria5->kriteria->bobot/100));
+                                        }
+                                        if ($pen->sub_kriteria5->kriteria->jenis_kriteria == 'Cost') {
+                                            $cos += (($pen->sub_kriteria5->nilai/$normalisasi[9]) * ($pen->sub_kriteria5->kriteria->bobot/100));
+                                        }
+                                        echo round($cos, 9);
                                     @endphp
                                 </td>
                                 <td>
                                     @php
                                         $tot = 0;
                                         if ($cos == 0) {
-                                            echo round($ben, 4);
+                                            echo round($ben, 9);
                                         } elseif ($ben == 0) {
-                                            echo round($cos, 4);
+                                            echo round($cos, 9);
                                         } else {
                                             $tot = $ben/$cos;
-                                            echo round($tot, 4);
+                                            echo round($tot, 9);
                                         }
                                     @endphp
                                 </td>
