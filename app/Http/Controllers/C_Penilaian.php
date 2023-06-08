@@ -63,6 +63,11 @@ class C_Penilaian extends Controller
             'sub_kriteria3_id' => 'required|max:255',
             'sub_kriteria4_id' => 'required|max:255',
             'sub_kriteria5_id' => 'required|max:255',
+            'sub_kriteria6_id' => 'required|max:255',
+            'sub_kriteria7_id' => 'required|max:255',
+            'sub_kriteria8_id' => 'required|max:255',
+            'sub_kriteria9_id' => 'required|max:255',
+            'sub_kriteria10_id' => 'required|max:255',
         ]);
 
         M_Penilaian::create($validatedData);
@@ -103,6 +108,11 @@ class C_Penilaian extends Controller
             'sub_kriteria3_id' => 'required|max:255',
             'sub_kriteria4_id' => 'required|max:255',
             'sub_kriteria5_id' => 'required|max:255',
+            'sub_kriteria6_id' => 'required|max:255',
+            'sub_kriteria7_id' => 'required|max:255',
+            'sub_kriteria8_id' => 'required|max:255',
+            'sub_kriteria9_id' => 'required|max:255',
+            'sub_kriteria10_id' => 'required|max:255',
         ];
 
         $validatedData = $request->validate($rules);
