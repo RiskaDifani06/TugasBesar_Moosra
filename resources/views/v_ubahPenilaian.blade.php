@@ -3,7 +3,7 @@
 <div class="container-fluid">
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">{{ $title }} {{ $penilaian->alternatif->nama_mahasiswa }}</h6>
+            <h6 class="m-0 font-weight-bold text-primary">{{ $title }} {{ $penilaian->alternatif->nama_alternatif }}</h6>
         </div>
         <div class="card-body">
             <form action="/penilaian/{{$penilaian->id}}/edit" method="POST">
@@ -19,7 +19,7 @@
                                 <option value="" hidden>Select {{ $kr->nama_kriteria }}</option>
                                 @foreach ($subkriteria as $sub)
                                     @if ($sub->kriteria_id == $kr->id)
-                                        <option value="{{$sub->id}}" @selected(old('{{ $kr->id }}', $kr->id) == '{{$sub->id}}')>{{ $sub->nama_sub }}</option>
+                                        <option value="{{$sub->id}}" @selected(old( '{{ $kr->id}}', $kr->id) == '{{$sub->id}}')> {{$sub->nilai}} </option>
                                     @endif
                                 @endforeach
                             </select>

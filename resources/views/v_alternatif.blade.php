@@ -17,7 +17,7 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Nama Mahasiswa</th>
+                            <th>Nama Alternatif</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -32,7 +32,7 @@
                         @foreach ($alternatif as $al)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td>{{ $al->nama_mahasiswa}}</td>
+                                <td>{{ $al->nama_alternatif}}</td>
                                 <td>
                                     <span class="d-flex align-items-center justify-content-start">
                                        <a href="/alternatif/ubah/{{$al->id}}" class="btn btn-warning btn-sm mx-1">
